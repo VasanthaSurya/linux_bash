@@ -1,0 +1,13 @@
+ls - list files and directories.
+mkdir - make a directory.
+chmod - change properties of file like read,write and execute.
+man - manual entry for commands.
+rm - remove.
+mv - move or rename.
+cd - change directory.
+ps - list of proceesses.
+jobs - list of jobs.
+top - cli for system monitor.
+less - viewing a file in compact way.
+cat - display entire file.
+touch - create a file if not already present.
