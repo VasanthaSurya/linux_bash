@@ -11,3 +11,10 @@ top - cli for system monitor.
 less - viewing a file in compact way.
 cat - display entire file.
 touch - create a file if not already present.
+alias - shows available aliases.
+cut
+paste
+grep
+find
+locate
+awk
