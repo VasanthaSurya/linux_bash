@@ -10,6 +10,7 @@
 
 ---
 ### Some keywords in bash script are:
+
 ---
 
 1. If
@@ -58,8 +59,11 @@
         #while loop statements
     done
 ```
+
 ---
+
 ### The conditional statements are as follows.
+
 ---
 
 ```
@@ -102,6 +106,8 @@
     select name [in words ...];do commands break ;done
 ```
 
+---
+
 ### Grouping commands in bash:
 
 > Bash provides two ways to group list of commands.
@@ -118,3 +124,46 @@
         Placing a list of commands between curly braces causes the list to be executed in the current shell context. 
         No subshell is created. 
 ```
+
+--- 
+
+### Some definitions you should know.
+
+> ### metacharacter
+>> - A character that, when unquoted, separates words. A metacharacter is a space,tab, newline, or one of the following characters: ‘|’, ‘&’, ‘;’, ‘(’, ‘)’, ‘<’, or ‘>’.
+> ### signal
+>> - A mechanism by which a process may be notified by the kernel of an event occurring in the system.
+> ### job
+>> - A set of processes comprising a pipeline, and any processes descended from it,that are all in the same process group.
+> ### field
+>> - A unit of text that is the result of one of the shell expansions. After expansion,when executing a command, the resulting fields are used as the command name and arguments.
+> ### builtin
+>> - A command that is implemented internally by the shell itself, rather than by an executable program somewhere in the file system.
+> ### exit status
+>> - The value returned by a command to its caller. The value is restricted to eight bits, so the maximum value is 255.
+
+---
+
+### Points to remember.
+
+> #### asynchronous commands:
+> - If a command is terminated by the control operator ==‘&’==, the shell executes the command asynchronously in a subshell.
+> - This is known as executing the command in the background,and these are referred to as asynchronous commands.
+> - The shell does not wait for the command to finish, and the return status is 0.
+
+> #### AND and OR
+> 1. **command1 && command2**
+> - command2 is executed if, and only if, command1 returns an exit status of zero.
+> 2. **command1 || command2**
+> - command2 is executed if, and only if, command1 returns a non-zero exit status.
+
+> #### Shell Functions
+> :arrow_right: Shell functions are a way to group commands for later execution using a single name for the group.
+> :arrow_right: Shell functions are executed in the current shell context; no new process is created to interpret them.
+> ``` 
+>    Functions are declared using the syntax:
+>        fname () compound-command [ redirections ]
+>                            (or)
+>        function fname [()] compound-command [ redirections ]
+>```
+> :arrow_right: will be continued .... 
