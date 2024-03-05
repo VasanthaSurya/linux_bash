@@ -167,3 +167,27 @@
 >        function fname [()] compound-command [ redirections ]
 >```
 > :arrow_right: will be continued .... 
+
+> #### Process
+> - A process is simply an instance of one or more related tasks (threads) executing on your computer. 
+> - If we are running a process in background, it means it become detached from the shell.
+---
+| **Process Type** | **Description** | **Example** |
+| ---- | -------- | ---- |
+| Interactive Process | Need to be started by user, either by command line or gui. | firefox, bash, top |
+| Batch Process | Automatic processes which are scheduled and then detached from the terminal. | updatedb, idconfig |
+| Deamons | Server processes that run continuously.Many lauch during system startup. | httpd, sshd |
+| Threads | Light weight process . | firefox, gnome-terminal-server |
+| Kernel Threads| Kernel tasks that users neither start nor terminate and have little control over. | kthreadd, migration, ksoftirqd |
+---
+> - At any given time, there are always multiple processes being executed.
+> - The OS keeps track of them by assigning a unique id called PID.
+> - It is used to track process state, CPU usage, memory and where it is located in memory.
+---
+| ID Type | Description |
+| ---- | -------- |
+| Process ID(PID) | Unique process ID number. |
+| Parent Process ID(PPID) | Parent that started the process. If parent , it refers to the adoptive process. |
+| Thread ID(TID) | Thread ID number. This is the same as the PID for single-threaded processes. For a multi-threaded process, each thread shares the same PID, but has a unique TID.|
+---
+>
